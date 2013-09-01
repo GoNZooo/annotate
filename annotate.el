@@ -40,3 +40,5 @@ input and adds annotation to anno file"
   (create-annotation (buffer-name)
 		     (line-number-at-pos (line-beginning-position))
 		     annotation-content))
+
+(provide 'annotate)
