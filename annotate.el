@@ -4,7 +4,7 @@
 
 (defun create-annotation (buffer-name line-number annotation)
   "Adds actual annotation to anno file associated with given buffer.
-Annotation is in the form of <line number>\t<annotation>"
+Annotation is in the form of <line number><tab><annotation>"
   (with-current-buffer (find-file (concat buffer-name ".anno"))
     (goto-end-of-buffer)
     
